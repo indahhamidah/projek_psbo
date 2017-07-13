@@ -70,6 +70,24 @@ class AuthController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'gambar' => $data['gambar'],
         ]);
     }
+
+    //baru buat
+    public function foto(Request $request)
+    {
+
+        // Disini proses mendapatkan judul dan memindahkan letak gambar ke folder image
+        $file       = $request->file('gambar');
+        $fileName   = $file->getClientOriginalName();
+        $request->file('gambar')->move("image/", $fileName);
+
+        $tambah->gambar = $fileName;
+        $tambah->save();
+
+        return redirect()->to('/');
+    }
+    
+   
 }

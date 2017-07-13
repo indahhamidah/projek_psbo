@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/crud', 'CrudController@index');
+Route::get('/show', 'CrudController@index');
+Route::get('/add', 'CrudController@create');
+Route::post('/store', 'CrudController@store');
+Route::get('/read/{id}', 'CrudController@show');
+Route::get('/edit/{id}', 'CrudController@edit');
+Route::post('/update/{id}', 'CrudController@update');
+Route::get('/delete/{id}', 'CrudController@destroy');
+Route::get('query', 'CariController@search');
+Route::get('pdfview',array('as'=>'pdfview','uses'=>'ItemController@pdfview'));
+Route::get('/pdfview/{id}', 'CrudController@edit');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
