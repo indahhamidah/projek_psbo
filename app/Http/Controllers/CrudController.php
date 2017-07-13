@@ -94,14 +94,11 @@ class CrudController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-   
-        public function show($id)
-    {
-        $user=auth()->user();
-        $user_id = $user->id;
-        dd($id);
-        $tampilkan = Crud::where('user_id', $user_id)->where('id',$id)->get();
-        return view('tampil')->with('tampilkan', $tampilkan);
+
+     public function show($id) 
+    { 
+        $tampilkan = Crud::find($id); 
+        return view('tampil')->with('tampilkan', $tampilkan); 
     }
     
 
