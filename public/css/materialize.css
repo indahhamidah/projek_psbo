@@ -3,6 +3,9 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -1206,7 +1209,9 @@
 .light-green {
   background-color: #8bc34a !important;
 }
-
+.green-asin{
+  color:#0DE5E1;
+}
 .light-green-text {
   color: #8bc34a !important;
 }
@@ -3490,7 +3495,7 @@ nav ul a span.badge {
 
 .row .col.offset-s1 {
   margin-left: 8.3333333333%;
-}
+ }
 
 .row .col.pull-s1 {
   right: 8.3333333333%;

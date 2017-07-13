@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <div class="container">
     <div class="row">
@@ -9,12 +8,12 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
             <center>
-            <img src="{{ asset('img1/rb.png')  }}" />
+            <img src="<?php echo e(asset('img1/rb.png')); ?>" />
             </center>
             
 
                         <div class="section">
-                        <form action="{{ url('query') }}" method="GET">
+                        <form action="<?php echo e(url('query')); ?>" method="GET">
                             <div class="row">
                                   <div class="input-field col-md-12">
                                     <input type="text" class="validate col-md-12" placeholder="Search" name="q">
@@ -34,6 +33,8 @@
     <br></br>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
+
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

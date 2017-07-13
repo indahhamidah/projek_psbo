@@ -2,25 +2,25 @@
 <html>
 <head>
     <title>RuangBagi</title>
-    <link rel="stylesheet" href="{{asset('css/materialize.min.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/materialize.min.css')); ?>">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    @section('css')
+    <?php $__env->startSection('css'); ?>
 
-    @show
+    <?php echo $__env->yieldSection(); ?>
     
 </head>
 <body>
-@section('header')
-    @include('layouts.header')
-@show
+<?php $__env->startSection('header'); ?>
+    <?php echo $__env->make('layouts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->yieldSection(); ?>
 
 <div class="container">
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="{{asset('js/materialize.min.js')}}"></script>
+<script src="<?php echo e(asset('js/materialize.min.js')); ?>"></script>
 
 <script type="text/javascript">
     (function($){
