@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gilacoding | CRUD Laravel 5.2 dengan Materializecss</title>
+    <title>RuangBagi</title>
     <link rel="stylesheet" href="{{asset('css/materialize.min.css')}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     @section('css')
 
     @show
+    <style>
+         body {
+            font-family: 'Roboto';
+            font-size: 18pt;
+            
+        }
+    </style>
 </head>
 <body>
 @section('header')
@@ -20,6 +27,7 @@
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="{{asset('js/materialize.min.js')}}"></script>
+
 <script type="text/javascript">
     (function($){
   $(function(){
@@ -31,4 +39,5 @@
 </script>
 
 </body>
+
 </html>
