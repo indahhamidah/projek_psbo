@@ -18,7 +18,11 @@ class CariController extends Controller
     public function search(Request $request)
     {
         $query = $request->get('q');
+<<<<<<< HEAD
         $hasil = Crud::where('judul', 'LIKE', '%' . $query . '%')->paginate(5);
+=======
+        $hasil = Crud::where('judul', 'LIKE', '%' . $query . '%')->paginate(10);
+>>>>>>> upstream/master
 
         return view('result', compact('hasil', 'query'));
     }

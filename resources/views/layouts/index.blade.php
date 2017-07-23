@@ -8,6 +8,7 @@
     @section('css')
 
     @show
+<<<<<<< HEAD
     <style>
          body {
             font-family: 'Roboto';
@@ -15,6 +16,9 @@
             
         }
     </style>
+=======
+    
+>>>>>>> upstream/master
 </head>
 <body>
 @section('header')

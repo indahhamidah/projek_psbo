@@ -43,9 +43,14 @@ class CrudController extends Controller
     {
         $user=auth()->user();
         $user_id = $user->id;
+<<<<<<< HEAD
         $datas = $request->get('q');
         $hasil = Crud::orderBy('id', 'DESC') -> where('user_id', $user_id)->paginate(5);
         return view('show') -> with('hasil', $datas);
+=======
+        $datas = Crud::orderBy('id', 'DESC') -> where('user_id', $user_id)->paginate(4);
+        return view('show') -> with('datas', $datas);
+>>>>>>> upstream/master
         //
     }
 
@@ -88,12 +93,20 @@ class CrudController extends Controller
         $request->file('gambar')->move("image/", $fileName);
         
         $tambah->gambar = $fileName;
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
         $tambah->user_id = $user_id;
         $tambah->save();
       
         return redirect()->to('/crud');
 
+<<<<<<< HEAD
+=======
+        return redirect()->to('/crud');
+
+>>>>>>> upstream/master
     }
 
     
@@ -168,9 +181,15 @@ class CrudController extends Controller
         public function getIconAttribute() {
 
         $extensions = [
+<<<<<<< HEAD
             'exc' => 'excel.png',
             'ppt' => 'ppt.png',
             'pdf' => 'pdf.png',
+=======
+            'jpg' => 'jpeg.png',
+            'png' => 'png.png',
+            'pdf' => 'PDF-icon.png',
+>>>>>>> upstream/master
             'doc' => 'docx.png',
         ];
 

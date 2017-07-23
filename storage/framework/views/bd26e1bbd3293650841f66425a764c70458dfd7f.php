@@ -6,6 +6,10 @@
     <br></br>
     <br></br>
         <div class="col-md-10 col-md-offset-1">
+<<<<<<< HEAD
+=======
+            <div class="panel panel-default">
+>>>>>>> upstream/master
             <center>
             <img src="<?php echo e(asset('img1/rb.png')); ?>" />
             </center>
@@ -35,5 +39,9 @@
 <?php $__env->stopSection(); ?>
 
 
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> upstream/master
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

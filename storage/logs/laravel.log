@@ -11500,6 +11500,7 @@ Stack trace:
 #61 C:\xampp\htdocs\ruangbagi\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(99): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #62 C:\xampp\htdocs\ruangbagi\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #63 {main}  
+<<<<<<< HEAD
 [2017-07-13 20:08:49] local.ERROR: ErrorException: Undefined property: Illuminate\Database\Eloquent\Collection::$judul in C:\xampp\htdocs\ruangbagi\storage\framework\views\17de4d1bca60e9272f99c44ecc2f8b24a1b3d0bd.php:9
 Stack trace:
 #0 C:\xampp\htdocs\ruangbagi\storage\framework\views\17de4d1bca60e9272f99c44ecc2f8b24a1b3d0bd.php(9): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 9, Array)
@@ -13057,3 +13058,5 @@ Stack trace:
 #40 C:\xampp\htdocs\ruangbagi\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(99): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #41 C:\xampp\htdocs\ruangbagi\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #42 {main}  
+=======
+>>>>>>> upstream/master

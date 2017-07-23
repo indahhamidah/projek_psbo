@@ -8,6 +8,7 @@
     <?php $__env->startSection('css'); ?>
 
     <?php echo $__env->yieldSection(); ?>
+<<<<<<< HEAD
     <style>
          body {
             font-family: 'Roboto';
@@ -15,6 +16,9 @@
             
         }
     </style>
+=======
+    
+>>>>>>> upstream/master
 </head>
 <body>
 <?php $__env->startSection('header'); ?>

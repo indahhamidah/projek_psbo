@@ -7,6 +7,10 @@
     <br></br>
     <br></br>
         <div class="col-md-10 col-md-offset-1">
+<<<<<<< HEAD
+=======
+            <div class="panel panel-default">
+>>>>>>> upstream/master
             <center>
             <img src="{{ asset('img1/rb.png')  }}" />
             </center>

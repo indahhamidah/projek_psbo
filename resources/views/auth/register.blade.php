@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+=======
+@section('js')
+<script type="text/javascript">
+
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#showgambar').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#inputgambar").change(function () {
+        readURL(this);
+    });
+
+</script>
+
+@stop
+>>>>>>> upstream/master
 
 @extends('layouts.app')
 
@@ -81,9 +106,24 @@
                             </div>
                         </div>
                         <div class="row">
+<<<<<<< HEAD
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                             
+=======
+                            <div class="form-group">
+                              <div class="col-md-6 col-md-offset-4">
+                                <img src="http://placehold.it/100x100" id="showgambar" style="max-width:200px;max-height:200px;float:left;" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                            <div class="input-field col s6">
+                              <input type="file" id="inputgambar" name="gambar" class="validate"/ >
+                            </div>
+>>>>>>> upstream/master
                           </div>
                         </div>
                         </div>

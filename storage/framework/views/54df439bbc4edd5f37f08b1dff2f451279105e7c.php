@@ -7,9 +7,15 @@
     <div class="row">
           <div class="input-field col s12">
             <input type="text" class="validate" name="q">
+<<<<<<< HEAD
             <label for="title">Search</label>
           </div>
            <button type="submit" class="btn btn-flat blue accent-3 waves-effect waves-light white-text right">Search<i class="material-icons right">search</i></button>
+=======
+            <label for="title">Cari</label>
+          </div>
+           <button type="submit" class="btn btn-flat blue accent-3 waves-effect waves-light white-text right">Cari <i class="material-icons right">search</i></button>
+>>>>>>> upstream/master
     </div>
  </form>
     <?php foreach($datas as $data): ?>
@@ -45,5 +51,9 @@
  </div>
 
 
+<<<<<<< HEAD
 <?php $__env->stopSection(); ?>
+=======
+<?php $__env->stopSection(); ?>
+>>>>>>> upstream/master
 <?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -71,7 +71,11 @@
                     <?php else: ?>
                         <li><a class="navbar-brand" href="<?php echo e(url('/add')); ?>">Upload File</a></li>
                         <li><a class="navbar-brand" href="<?php echo e(url('/show')); ?>">MyRoom</a></li>
+<<<<<<< HEAD
                        
+=======
+                        <img src="http://placehold.it/100x100" id="showgambar" style="max-width:20px;max-height:20px;float:left;" />
+>>>>>>> upstream/master
                         <li class="dropdown">  
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
@@ -97,5 +101,9 @@
   
 </div>
 </body>
+<<<<<<< HEAD
  <div id="footer"><p>Copyright &copy; 2017 - RuangBagi</p></div>
+=======
+ <div id="footer"><p>Copyright &copy; 2017 - All Rights Reserved</p></div>
+>>>>>>> upstream/master
 </html>

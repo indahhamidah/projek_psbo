@@ -55,5 +55,9 @@
   </form>
 </div>
 
+<<<<<<< HEAD
 <?php $__env->stopSection(); ?>
+=======
+<?php $__env->stopSection(); ?>
+>>>>>>> upstream/master
 <?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

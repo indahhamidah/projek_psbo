@@ -37,6 +37,7 @@
     </div>
   </div>
   <?php else: ?>
+<<<<<<< HEAD
 
    <div class="row">
         <div class="col s12">
@@ -54,6 +55,21 @@
             <a href="<?php echo e(url('edit', $data->id)); ?>" class="btn btn-flat blue darken-4 waves-effect waves-light white-text">Edit <i class="material-icons right">mode_edit</i></a>
             <a href="<?php echo e(url('delete', $data->id)); ?>" onclick="return confirm('Yakin mau hapus data ini sob?')" class="btn btn-flat red darken-4 waves-effect waves-light white-text">Delete <i class="material-icons right">delete</i></a>
         </div>
+=======
+  <div class="col s12">
+      <h5><?php echo e($data->judul); ?></h5>
+
+            <div class="divider"></div>
+            <p><?php echo substr($data->isi,0,200); ?>...</p>
+             <img src="<?php echo e(asset('img1/PDF-icon.png')); ?>" style="max-height:100px;max-width:100px;margin-top:10px;">
+             <p> </p>
+            <a href="<?php echo e(asset('/image/'.$data->gambar)); ?>">Open the pdf!</a>
+              <p> </p>
+                
+            <a href="<?php echo e(url('read', $data->id)); ?>" class="btn btn-flat pink accent-3 waves-effect waves-light white-text">Readmore <i class="material-icons right">send</i></a>
+            <a href="<?php echo e(url('edit', $data->id)); ?>" class="btn btn-flat purple darken-4 waves-effect waves-light white-text">Edit <i class="material-icons right">mode_edit</i></a>
+            <a href="<?php echo e(url('delete', $data->id)); ?>" onclick="return confirm('Yakin mau hapus data ini sob?')" class="btn btn-flat red darken-4 waves-effect waves-light white-text">Delete <i class="material-icons right">delete</i></a>
+>>>>>>> upstream/master
     </div>
   </div>
   <?php endif; ?>
@@ -80,5 +96,9 @@
 
 
 
+<<<<<<< HEAD
 <?php $__env->stopSection(); ?>
+=======
+<?php $__env->stopSection(); ?>
+>>>>>>> upstream/master
 <?php echo $__env->make('layouts.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
